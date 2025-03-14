@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { DbzService } from '../services/main-page.service';
-import { Character } from '../interfaces/character.interface';
+
 
 @Component({
   selector: 'app-main-page',
@@ -11,8 +11,9 @@ import { Character } from '../interfaces/character.interface';
 export class MainPageComponent{
 
   constructor ( public dbzService: DbzService ) {
-    dbzService.characters
-    dbzService.onNewCharacter
+
   }
+
+
 
 }

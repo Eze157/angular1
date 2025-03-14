@@ -14,10 +14,14 @@
 
     {{character.name}} - Power: {{character.power}}
 
-    <span>Es el primero: {{ i === 0 }}</span>
+    <!-- <span>Es el primero: {{ i === 0 }}</span> -->
   </div>
 
-    <button class="btn btn-danger">X</button>
+    <button
+    (click)="onDeleteCharacter( character.id )"
+    class="btn btn-danger">
+    X
+    </button>
 
   </li>
   </ul>
